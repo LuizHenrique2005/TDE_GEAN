@@ -26,6 +26,11 @@ header img {
     width: 300px;
     margin-right: 10px; /* Espaço entre a imagem e o texto */
 }
+@media (max-width: 656px) {
+    .logo2 img {
+      display: none;
+    }
+  }
 
 
 /* Imagens */
