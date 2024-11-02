@@ -1,0 +1,48 @@
+* {
+    background-color: #FFFCDF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 50px;
+    /* Ajuste conforme a dimensão da logo */
+}
+
+.navbar .title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar .contact-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 60px;
+    /* Ajuste conforme a altura da navbar */
+    padding: 20px;
+    height: 2000px;
+    /* Apenas para demonstrar o efeito de rolagem */
