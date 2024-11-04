@@ -82,146 +82,34 @@ img {
     transition: transform 0.3s ease-in-out;
 }
 
-img:hover {
-    transform: scale(1.05);
-}
 
 /* Contêiner da Página */
-.page-container {
-    margin-top: 100px;
+.container3{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 90vh;
-    padding: 20px;
-    animation: slideIn 1s ease-in-out;
+    /* Alinha os itens no centro */
+    align-items: flex-start;
+    gap: 50px;
+    /* Adiciona uma margem de 20px entre as divs */
+    margin-top: 200px;
+    /* Apenas para dar um espaçamento do topo da página */
 }
 
-/* Carrossel */
-.carousel {
-    width: 88%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px;
+.box {
+    text-align: center;
 }
 
-.carousel-inner {
-    display: flex;
-    width: 160%;
-    animation: slide 15s infinite;
-    gap: 25px;
-}
-
-.carousel-item {
-    width: 20%;
-    flex: 1 0 20%;
-    padding: 0 3px;
-    box-sizing: border-box;
-}
-
-.carousel img {
-    width: 100%;
+.box img {
+    width: 350px;
+    /* Ajuste conforme necessário */
+    height: 350px;
+    /* Mantém a proporção da imagem */
     display: block;
-    border-radius: 10px;
+    margin: 0 auto;
 }
 
-@keyframes slide {
-
-    0%,
-    20% {
-        transform: translateX(0%);
-    }
-
-    25%,
-    45% {
-        transform: translateX(-20%);
-    }
-
-    50%,
-    70% {
-        transform: translateX(-42%);
-    }
-}
-
-/* Animações */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .carousel-item {
-        width: 50%;
-        flex: 1 0 50%;
-    }
-
-    @keyframes slide {
-
-        0%,
-        20% {
-            transform: translateX(0%);
-        }
-
-        25%,
-        45% {
-            transform: translateX(-50%);
-        }
-
-        50%,
-        70% {
-            transform: translateX(-100%);
-        }
-
-        75%,
-        95% {
-            transform: translateX(-150%);
-        }
-
-        100% {
-            transform: translateX(-200%);
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-item {
-        width: 80%;
-        flex: 1 0 80%;
-    }
-
-    @keyframes slide {
-
-        0%,
-        30% {
-            transform: translateX(0%);
-        }
-
-        35%,
-        65% {
-            transform: translateX(-80%);
-        }
-
-        70%,
-        100% {
-            transform: translateX(-170%);
-        }
-    }
+.box p {
+    margin-top: 10px;
 }
 
 /* Contêineres */

@@ -30,13 +30,14 @@
 
 @media (max-width: 656px) {
     .navbar .logo {
-      display: none;
+        display: none;
     }
-  }
+}
 
 .navbar .title {
     flex-grow: 1;
     text-align: center;
+    align-items: center;
     font-size: 30px;
 }
 
@@ -51,56 +52,46 @@
 }
 
 .contact-button:hover {
-    transform: scale(0.95); 
+    transform: scale(0.95);
 }
 
 
-   
 
-    /* Imagens */
+
+/* Imagens */
 img {
     height: 400px;
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
 
 
-/* Contêiner da Página */
-.page-container {
-    margin-top: 100px;
+.container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 90vh;
+    /* Alinha os itens no centro */
+    align-items: flex-start;
+    gap: 50px;
+    /* Adiciona uma margem de 20px entre as divs */
+    margin-top: 200px;
+    /* Apenas para dar um espaçamento do topo da página */
 }
 
-/* Carrossel */
-.carousel {
-    width: 200%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px;
+.box {
+    text-align: center;
 }
 
-.carousel-inner {
-    display: flex;
-    width: auto;
-    gap: 20px;
-}
-
-.carousel-item {
-    width: 100%;
-    flex: 1 0 20%;
-    margin: 2%;
-    box-sizing: border-box;
-}
-
-.carousel img {
-    width: 70%;
+.box img {
+    width: 350px;
+    /* Ajuste conforme necessário */
+    height: 350px;
+    /* Mantém a proporção da imagem */
     display: block;
-    border-radius: 10px;
-    margin: 5%;
+    margin: 0 auto;
+}
+
+.box p {
+    margin-top: 10px;
 }
