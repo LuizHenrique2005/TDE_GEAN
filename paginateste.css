@@ -95,3 +95,25 @@ img {
 .box p {
     margin-top: 10px;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    /* Alinha os vídeos no centro */
+    gap: 20px;
+    /* Adiciona um espaço entre os vídeos */
+    margin-top: 50px;
+    /* Apenas para dar um espaçamento do topo da página */
+}
+
+.video-container video {
+    width: 45%;
+    /* Ajusta a largura dos vídeos para caberem lado a lado */
+    height: auto;
+    /* Mantém a proporção dos vídeos */
+}
