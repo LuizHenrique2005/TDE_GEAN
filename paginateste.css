@@ -1,9 +1,10 @@
 * {
     background-color: #FFFCDF;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -92,28 +93,21 @@ img {
     margin: 0 auto;
 }
 
-.box p {
-    margin-top: 10px;
-}
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    /* Alinha os vídeos no centro */
-    gap: 20px;
-    /* Adiciona um espaço entre os vídeos */
+#typing-text {
+    font-size: 20px;
+    border-right: 2px solid #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
     margin-top: 50px;
-    /* Apenas para dar um espaçamento do topo da página */
+    /* Adiciona espaçamento superior */
 }
 
-.video-container video {
-    width: 45%;
-    /* Ajusta a largura dos vídeos para caberem lado a lado */
-    height: auto;
-    /* Mantém a proporção dos vídeos */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
 }
