@@ -1,5 +1,5 @@
 * {
-    background-color: #dddabb;
+    background-color: #dadada;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,17 +9,49 @@
 
 
 
+
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    height: 100px;
+    background-color: #dadada;
+    /* Defina uma cor de fundo sólida */
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+}
 
+.navbar .logo {
+    width: 150px;
+    height: 150px;
+    /* Ajuste conforme a dimensão da logo */
+}
+
+@media (max-width: 656px) {
+    .navbar .logo {
+        display: none;
+    }
+}
+
+.navbar .title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.navbar .contact-button {
+    background-color: transparent;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.8s;
 }
 
 .titulo{
@@ -89,8 +121,6 @@ text-align: center;
 }
 
 
-
-
 /* Imagens */
 img {
     height: 400px;
@@ -109,7 +139,7 @@ img {
     align-items: flex-start;
     gap: 50px;
     /* Adiciona uma margem de 20px entre as divs */
-    margin-top: 200px;
+    margin-top: 40px;
     /* Apenas para dar um espaçamento do topo da página */
     
 }
@@ -123,6 +153,10 @@ img {
     /* Adiciona uma margem de 20px entre as divs */
     margin-top: 50px;
     /* Apenas para dar um espaçamento do topo da página */
+}
+
+.titulobols{
+margin-top: 10px;
 }
     
 
@@ -148,7 +182,7 @@ img {
     overflow: hidden;
     display: inline-block;
     animation: blink-caret 0.75s step-end infinite;
-    margin-top: 50px;
+    margin-top: 120px;
     /* Adiciona espaçamento superior */
 }
 
