@@ -1,5 +1,5 @@
 * {
-    background-color: #FFFCDF;
+    background-color: #dddabb;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -21,6 +21,38 @@
     align-items: center;
 
 }
+
+.titulo{
+    margin-top: 0px;
+text-align: center;
+    font-size: 25px;
+}
+.sub{
+    margin-top: 40px;
+    text-align: center;
+        font-size: 14px;
+
+
+}
+.coleção{
+    margin-top: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 250px;
+    height: 42px;
+    transition: transform 0.9s;
+}
+
+
+
+.coleção:hover {
+    transform: scale(1.02); 
+    /* Adicionar uma animação nesse botão, animação discreta */
+}
+
+
+
 
 .navbar .logo {
     width: auto;
@@ -65,6 +97,7 @@ img {
     width: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
+    border-radius: 3px;
 }
 
 
@@ -78,7 +111,20 @@ img {
     /* Adiciona uma margem de 20px entre as divs */
     margin-top: 200px;
     /* Apenas para dar um espaçamento do topo da página */
+    
 }
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    /* Alinha os itens no centro */
+    align-items: flex-start;
+    gap: 15%;
+    /* Adiciona uma margem de 20px entre as divs */
+    margin-top: 50px;
+    /* Apenas para dar um espaçamento do topo da página */
+}
+    
 
 .box {
     text-align: center;
