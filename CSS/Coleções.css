@@ -18,6 +18,7 @@
     align-items: center;
     z-index: 1000;
     border-bottom: 1px solid black;
+    box-shadow: 10px 5px 5px rgba(105, 100, 100, 0.288);
 }
 
 .navbar .title {
@@ -27,7 +28,6 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: -14px;
-
 }
 
 .navbar .contact-button {
@@ -41,18 +41,12 @@
     cursor: pointer;
     transition: transform 0.8s;
     margin-top: -14px;
-
 }
 
 .contact-button:hover {
     transform: scale(0.95);
 }
 
-.navbar-divider {
-    height: 2px;
-    background-color: black;
-    width: 100%;
-}
 
 .back-button {
     width: 7.5%;
@@ -81,6 +75,7 @@ img {
     width: 100%;
     object-fit: cover;
     border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .container {
@@ -126,4 +121,20 @@ img {
 
 .box img:hover {
     transform: scale(1.02);
+}
+
+#typing-text {
+    font-size: 20px;
+    border-right: 2px solid #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+    margin-top: 80px;
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
 }

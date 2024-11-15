@@ -1,0 +1,175 @@
+* {
+    background-color: #dadada;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFCDF;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+    box-shadow: 10px 5px 5px rgba(105, 100, 100, 0.288);
+}
+
+.navbar .title {
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -1.1%;
+}
+
+.navbar .Carrinho {
+        width: 40px;
+        height: 40px;
+        margin-left: 90%;
+
+    }
+
+
+.product-page {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.product-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-image img:hover {
+    transform: scale(1.01);
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.product-details {
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.product-details h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-details .description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify
+}
+
+.add-to-cart,
+.consult-availability {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+    
+}
+
+.add-to-cart {
+    background-color: black;
+    color: white;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+
+.consult-availability {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.consult-availability:hover {
+    background-color: #adadad;
+}
+
+
+.titulo {
+    padding-left: 7%;
+    font-size: 20px;
+    padding-top: 2%;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding-top: 10px; /* Ajustado para acomodar a navbar fixa */
+}
+.box {
+    text-align: center;
+}
+
+.box img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box img:hover {
+    transform: scale(1.02);
+}
