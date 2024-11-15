@@ -32,8 +32,7 @@ header {
     background-color: #FFFCDF;
     border: 2px solid #000;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
+    transition: background-color 0.9s ease, color 0.9s ease, transform 0.9s ease;}
 
 .back-button:hover {
     background-color: rgba(136, 136, 74, 0.4);
