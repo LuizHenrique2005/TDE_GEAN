@@ -9,16 +9,16 @@
 .navbar {
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 10%; /* Altura em porcentagem */
     background-color: #dadada;
     color: rgb(0, 0, 0);
-    padding: 10px 20px;
+    padding: 1% 2%; /* Padding em porcentagem */
     display: flex;
-    justify-content: center; /* Ajustado para centralizar o título */
+    justify-content: center;
     align-items: center;
     z-index: 1000;
-    border-bottom: 1px solid black;
-    box-shadow: 10px 5px 5px rgba(105, 100, 100, 0.288);
+    border-bottom: 0.1% solid black;
+    box-shadow: 1% 0.5% 0.5% rgba(105, 100, 100, 0.288);
 }
 
 .navbar .title {
@@ -28,6 +28,7 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: -14px;
+    
 }
 
 .navbar .contact-button {
@@ -54,7 +55,7 @@
     width: auto; /* Ajuste conforme necessário */
     text-align: center;
     text-decoration: none;
-    margin-top: 8%; /* Ajusta o espaçamento superior */
+    margin-top: 6%; /* Ajusta o espaçamento superior */
     margin-left: 1%; /* Ajusta o espaçamento à esquerda */
     padding: 1% 2%; /* Padding em porcentagem */
     font-size: 1.5vw; /* Fonte adaptável */
@@ -145,6 +146,38 @@ img {
         width: auto;
     }
 }
+
+@media (max-width: 425px) {
+   
+    .contact-button {
+        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
+
+    .navbar .title {
+        font-size: 20px;
+    }
+   
+    .back-button {
+        margin-top: 14%; /* Pode precisar de mais espaço em telas menores */
+    }
+}
+
+@media (max-width: 320px) {
+   
+    .contact-button {
+        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
+
+    .navbar .title {
+        font-size: 20px;
+
+    }
+   
+    .back-button {
+        margin-top: 14%; /* Pode precisar de mais espaço em telas menores */
+    }
+}
+
 .dropdown-content {
     display: none; /* Oculta o dropdown inicialmente */
     position: absolute;
