@@ -14,7 +14,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 10%; /* Ajustado para % */
     background-color: #dadada;
     display: flex;
     justify-content: center;
@@ -25,36 +25,35 @@ body {
 }
 
 .navbar .title {
-    font-size: 30px;
+    font-size: 20px; /* Responsivo */
     color: black;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: -1.1%;
+    margin-top: -1%;
 }
 
 .navbar .Carrinho {
-        width: 40px;
-        height: 40px;
-        margin-left: 90%;
-
-    }
-
+    width: 5%; /* Responsivo */
+    height: 5%; /* Responsivo */
+    margin-left: auto;
+}
 
 .product-page {
-    margin-top: 120px;
+    margin-top: 2%; /* Ajustado para acomodar a navbar */
     display: flex;
+    flex-direction: column; /* Ajustado para responsividade */
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
+    padding: 5%; /* Responsivo */
 }
 
 .product-visual {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    max-width: 600px;
+    gap: 2%; /* Ajustado */
+    width: 90%; /* Responsivo */
 }
 
 .main-image img {
@@ -69,12 +68,12 @@ body {
 
 .thumbnails {
     display: flex;
-    gap: 10px;
+    gap: 2%; /* Responsivo */
 }
 
 .thumbnail {
-    width: 100px;
-    height: 100px;
+    width: 15%; /* Ajustado para % */
+    height: auto; /* Proporcional */
     object-fit: cover;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -87,40 +86,40 @@ body {
 }
 
 .product-details {
-    margin-left: 20px;
-    max-width: 500px;
+    margin-top: 5%; /* Para aparecer abaixo das imagens em telas pequenas */
+    width: 90%; /* Responsivo */
 }
 
 .product-details h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 15px; /* Responsivo */
+    margin-bottom: 3%; /* Responsivo */
 }
 
 .product-details .price {
-    font-size: 24px;
+    font-size: 12px; /* Responsivo */
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 5%; /* Responsivo */
+    display: none;
 }
 
 .product-details .description {
-    font-size: 16px;
+    font-size: 12px; /* Responsivo */
     line-height: 1.5;
-    margin-bottom: 20px;
-    text-align: justify
+    margin-bottom: 5%; /* Responsivo */
+    text-align: justify;
 }
 
 .add-to-cart,
 .consult-availability {
     display: block;
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    padding: 2%; /* Responsivo */
+    font-size: 12px; /* Responsivo */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-bottom: 10px;
-    
+    margin-bottom: 3%; /* Responsivo */
 }
 
 .add-to-cart {
@@ -142,34 +141,64 @@ body {
     background-color: #adadad;
 }
 
-
 .titulo {
     padding-left: 7%;
-    font-size: 20px;
+    font-size: 14px; /* Responsivo */
     padding-top: 2%;
-
 }
 
-.container {
+.titulobols{
+    font-size: 12px;
+}
+
+.container3 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
-    padding-top: 10px; /* Ajustado para acomodar a navbar fixa */
+    gap: 2%;
+    flex-wrap: wrap;
+    padding-top: 3%;
 }
+
 .box {
     text-align: center;
+    width: 30%; /* Ajusta a largura da box em porcentagem */
 }
 
 .box img {
-    width: 250px;
-    height: 250px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 3px;
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
     transition: transform 0.3s ease-in-out;
 }
 
 .box img:hover {
     transform: scale(1.02);
+}
+
+.box img:hover {
+    transform: scale(1.02);
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        margin-top: 14%;
+    }
+
+    .product-details {
+        margin-top: 5%; /* Mover para baixo das imagens */
+    }
+    
+    .thumbnail{
+        width: 25%;
+        height: 25%;
+
+    }
+
+    .container {
+        flex-wrap: nowrap; /* Para carrossel */
+        overflow-x: scroll; /* Permite rolagem horizontal */
+    }
 }
