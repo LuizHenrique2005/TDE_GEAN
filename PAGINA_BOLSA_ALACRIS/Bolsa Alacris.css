@@ -33,10 +33,13 @@ body {
     margin-top: -1%;
 }
 
-.navbar .Carrinho {
-    width: 5%; /* Responsivo */
-    height: 5%; /* Responsivo */
-    margin-left: auto;
+.navbar .Carrinho, .navbar .Carrinho2 {
+    width: 55px;  /* Defina um tamanho fixo */
+    height: 55px; /* Defina um tamanho fixo */
+}
+
+.navbar .Carrinho2 {
+    margin-left: 2%;
 }
 
 .product-page {
@@ -181,6 +184,10 @@ body {
 }
 
 /* Media Query para telas menores */
+
+
+
+
 @media (max-width: 768px) {
     .product-page {
         flex-direction: column;
@@ -201,4 +208,15 @@ body {
         flex-wrap: nowrap; /* Para carrossel */
         overflow-x: scroll; /* Permite rolagem horizontal */
     }
+}
+
+.navbar .Carrinho {
+    width: 25px; /* Defina um tamanho fixo */
+    height: 25px; /* Defina um tamanho fixo */
+    margin-left: auto;
+}
+.navbar .Carrinho2 {
+    width: 25px; /* Defina um tamanho fixo */
+    height: 25px; /* Defina um tamanho fixo */
+    margin-left: 1%;
 }
