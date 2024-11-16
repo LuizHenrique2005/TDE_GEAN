@@ -17,8 +17,38 @@
             <button class="contact-button">Fale Conosco</button>
         </a>
     </div>
+    <div class="dropdown">
+        <a href="#" class="back-button">Filtros</a>
+        <div class="dropdown-content">
+            <label for="type">Tipo:</label>
+            <select id="type">
+                <option value="todas">Todas</option>
+                <option value="mochila">Mochila</option>
+                <option value="carteira">Carteira</option>
+                <option value="tote">Tote</option>
+            </select>
 
-    <a href="" class="back-button">Filtros</a>
+            <label for="color">Cor:</label>
+            <select id="color">
+                <option value="todas">Todas</option>
+                <option value="preta">Preta</option>
+                <option value="marrom">Marrom</option>
+                <option value="vermelha">Vermelha</option>
+            </select>
+
+            <label for="price">Preço:</label>
+            <select id="price">
+                <option value="todos">Todos</option>
+                <option value="baixo">Baixo</option>
+                <option value="medio">Médio</option>
+                <option value="alto">Alto</option>
+            </select>
+
+            <!-- Botão para aplicar o filtro -->
+            <button onclick="filterBags()">Aplicar Filtros</button>
+        </div>
+    </div>
+
     <div class="container">
         <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 1">
             <p class="titulobols">Bolsa X</p>
@@ -55,7 +85,7 @@
     </div>
     <br>
 
-
+    <script src="Coleçao.js"></script>
 
 </body>
 
