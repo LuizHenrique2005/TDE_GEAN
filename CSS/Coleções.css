@@ -49,20 +49,22 @@
 
 
 .back-button {
-    width: 7.5%;
-    text-align: center;
+    position: relative; /* Permite que o botão fique na posição padrão do fluxo do documento */
     display: inline-block;
-    margin-top: 7%;
-    margin-left: 1%;
-    padding: 10px 20px;
+    width: auto; /* Ajuste conforme necessário */
+    text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    color: #000;
+    margin-top: 8%; /* Ajusta o espaçamento superior */
+    margin-left: 1%; /* Ajusta o espaçamento à esquerda */
+    padding: 1% 2%; /* Padding em porcentagem */
+    font-size: 1.5vw; /* Fonte adaptável */
+    color: #000000;
     background-color: transparent;
     border: 1px solid #000000;
     border-radius: 20px;
     transition: background-color 0.9s ease, color 0.9s ease, transform 0.9s ease;
 }
+
 
 .back-button:hover {
     background-color: #dadada;
@@ -78,44 +80,26 @@ img {
     transition: transform 0.3s ease-in-out;
 }
 
-.container {
+
+
+.container, .container2, .container3 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
-    padding-top: 30px; /* Ajustado para acomodar a navbar fixa */
-}
-
-.container2 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    margin-top: 15px;
-}
-
-.container3 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    margin-top: 15px;
-}
-
-.titulobols {
-    margin-top: 10px;
+    gap: 2%; /* Espaçamento ajustado */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    padding-top: 3%; /* Padding superior para acomodar a navbar */
 }
 
 .box {
     text-align: center;
+    width: 30%; /* Ajusta a largura da box em porcentagem */
 }
 
 .box img {
-    width: 350px;
-    height: 350px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 3px;
+    width: 100%; /* Ocupa toda a largura da box */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    border-radius: 3%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -123,18 +107,41 @@ img {
     transform: scale(1.02);
 }
 
+.titulobols {
+    font-size: 2vw; /* Fonte adaptável */
+    margin-top: 1%;
+}
+
 #typing-text {
-    font-size: 20px;
-    border-right: 2px solid #000000;
+    font-size: 2.5vw; /* Ajustável conforme a largura */
+    border-right: 0.2vw solid #000000;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
     animation: blink-caret 0.75s step-end infinite;
-    margin-top: 80px;
+    margin-top: 5%;
 }
 
 @keyframes blink-caret {
     50% {
         border-color: transparent;
+    }
+}
+
+@media (max-width: 1024px) {
+    .back-button {
+        width: 25%; /* Ajusta a largura para telas menores */
+        margin-top: 10%; /* Pode precisar de mais espaço em telas menores */
+        font-size: 2.5vw; /* Fonte um pouco maior em telas menores */
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-button {
+        width: 25%; /* Ajusta a largura para telas menores */
+        margin-top: 12%; /* Pode precisar de mais espaço em telas menores */
+        font-size: 2.5vw; /* Fonte um pouco maior em telas menores */
+        width: auto;
     }
 }
