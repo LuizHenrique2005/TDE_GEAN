@@ -116,6 +116,7 @@ img {
     margin: 0 auto;
     transition: transform 0.3s ease-in-out;
 }
+
 .box img:hover {
     transform: scale(1.02);
 }
@@ -126,7 +127,7 @@ img {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-   transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     margin-top: 80px;
 }
 
@@ -139,20 +140,23 @@ img {
 
 
 
-/* Tamanhos de telas médias (tablets) */
+/* Tamanhos de telas médias (tablets)
 @media (max-width: 1024px) and (min-width: 768px) {
     .navbar .title {
         font-size: 28px;
     }
+
     .container {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
+
     .box img {
         width: 250px;
         height: 250px;
     }
+
     .coleção {
         width: 220px;
         height: 45px;
@@ -161,82 +165,283 @@ img {
 }
 
 /* Tamanhos de telas pequenas (smartphones) */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .navbar {
         height: 60px;
     }
+
     .navbar .title {
         font-size: 20px;
     }
-    .container, .container2 {
+
+    .container,
+    .container2 {
         flex-direction: column;
         gap: 15px;
         margin-top: 20px;
     }
+
     .box img {
         width: 200px;
         height: 200px;
     }
+
     .coleção {
         width: 150px;
         height: 40px;
         font-size: 14px;
     }
-    .sub, .titulo {
+
+    .sub,
+    .titulo {
         font-size: 14px;
     }
-}
+}  */
 
 /* Ajustes extras para muito pequenas */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
+    .navbar{
+        height: 10%;
+    }
+
+    .navbar .title{
+        font-size: 20px;
+        margin-top: -8px;
+    }
+
     .container {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 5px;
         width: 100%;
+        gap: 10px;
+        margin-left: -1%;
+        margin-top: 80px;
+    }
+
+    .container2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 98%;
+        gap: 0px;
+        margin-left: 5px;
+        margin-top: 20px;
     }
 
     .box {
-        flex: 0 0 48%;
         display: flex;
+        flex-direction: column; /* Alinha os elementos verticalmente */
         align-items: center;
     }
 
     .box img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        display: flex;
     }
 
     .coleção {
-        width: 100px;
-        font-size: 13px;
+        width: auto;
+        font-size: 11px;
         padding: 5px;
         margin: 10px auto;
     }
 
-    .sub, .titulobols {
-        font-size: 13px;
+    .sub,
+    .titulobols {
+        font-size: 11px;
         text-align: center;
     }
 
     .titulo {
-        font-size: 10px;
+        font-size: 14px;
         text-align: center;
     }
 
     #typing-text {
-        font-size: 12px; /* Reduz o tamanho da fonte para telas pequenas */
+        font-size: 11px;
         margin-top: 30px;
         text-align: center;
     }
+
+    .contact-button {
+        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
+
+    .box#Bolsaz {
+        display: none;
+    }
+    .contact-button {
+        display: none;
+        /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
+    
+    .box#Bolsaz {
+        display: none;
+    }
 }
-.contact-button {
-    display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+
+
+@media (max-width: 425px) and (min-width: 321px) {
+    .navbar{
+        height: 10%;
+    }
+
+    .navbar .title{
+        font-size: 20px;
+        margin-top: -8px;
+    }
+
+    .container {
+        display: flex; /* Garante que as imagens fiquem lado a lado */
+        flex-direction: row;
+        width: 100%; /* Ocupa toda a largura */
+        gap: 5px;
+        margin-left: 0; /* Ajustado para centralizar */
+        margin-top: 80px;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+    
+    .container .box img {
+        width: 90%; /* Reduzido o tamanho da imagem */
+        height: 60%; /* Reduzido o tamanho da imagem */
+        object-fit: cover; /* Mantém a proporção das imagens */
+    }
+    
+    
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%; /* Altera para 100% para ocupar toda a largura */
+        gap: 30px; /* Reduzido para diminuir o espaçamento entre as imagens */
+        margin-left: 0; /* Ajustado para centralizar */
+        margin-top: 20px;
+        justify-content: center; /* Centraliza as imagens */
+        align-items: center; /* Centraliza os itens */
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        align-items: center; /* Garante o alinhamento central dentro de cada box */
+        justify-content: center; /* Garante que os itens dentro da box sejam centralizados */
+    }
+    
+    .box img {
+        width: 90%; /* Largura da imagem */
+        height: 60%; /* Altura da imagem */
+        display: flex;
+        margin: 0 auto; /* Garante que a imagem fique centralizada dentro da box */
+    }
+    
+    .coleção {
+        width: auto;
+        font-size: 3vw;
+        padding: 5px;
+        text-align: center; /* Centraliza o texto dentro do botão */
+        margin-top: 2%;
+
+    }
+    
+    .sub,
+    .titulobols {
+        font-size: 1.7vw;
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .titulo {
+        font-size: 2.3vw;
+        text-align: center; /* Centraliza o título */
+    }
+    
+    #typing-text {
+        font-size: 2vw;
+        margin-top: 30px;
+        text-align: center; /* Centraliza o texto de digitação */
+    }
+    
+    .contact-button {
+        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
+    
 }
 
 
 
+@media (max-width: 1024px) and (min-width: 425px) {
+    .container {
+        display: flex; /* Garante que as imagens fiquem lado a lado */
+        flex-direction: row;
+        width: 100%; /* Ocupa toda a largura */
+        gap: 5px;
+        margin-left: 0; /* Ajustado para centralizar */
+        margin-top: 80px;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+    
+    .container .box img {
+        width: 90%; /* Reduzido o tamanho da imagem */
+        height: 60%; /* Reduzido o tamanho da imagem */
+        object-fit: cover; /* Mantém a proporção das imagens */
+    }
+    
+    
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%; /* Altera para 100% para ocupar toda a largura */
+        gap: 30px; /* Reduzido para diminuir o espaçamento entre as imagens */
+        margin-left: 0; /* Ajustado para centralizar */
+        margin-top: 20px;
+        justify-content: center; /* Centraliza as imagens */
+        align-items: center; /* Centraliza os itens */
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        align-items: center; /* Garante o alinhamento central dentro de cada box */
+        justify-content: center; /* Garante que os itens dentro da box sejam centralizados */
+    }
+    
+    .box img {
+        width: 90%; /* Largura da imagem */
+        height: 60%; /* Altura da imagem */
+        display: flex;
+        margin: 0 auto; /* Garante que a imagem fique centralizada dentro da box */
+    }
+    
+    .coleção {
+        width: auto;
+        font-size: 2vw;
+        padding: 5px;
+        text-align: center; /* Centraliza o texto dentro do botão */
+        margin-top: 2%;
 
-
+    }
+    
+    .sub,
+    .titulobols {
+        font-size: 1.7vw;
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .titulo {
+        font-size: 2.3vw;
+        text-align: center; /* Centraliza o título */
+    }
+    
+    #typing-text {
+        font-size: 2vw;
+        margin-top: 30px;
+        text-align: center; /* Centraliza o texto de digitação */
+    }
+    
+    .contact-button {
+        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
+    
+}
