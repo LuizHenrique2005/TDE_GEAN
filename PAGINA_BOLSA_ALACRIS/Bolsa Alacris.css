@@ -28,19 +28,25 @@ body {
     font-size: 20px; /* Responsivo */
     color: black;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: -1%;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move para centralizar completamente */
+    margin: 0; /* Remove margem extra */
 }
 
-.navbar .Carrinho, .navbar .Carrinho2 {
-    width: 55px;  /* Defina um tamanho fixo */
-    height: 55px; /* Defina um tamanho fixo */
-}
 
+.navbar .Carrinho {
+    width: 35px; /* Defina um tamanho fixo */
+    height: 35px; /* Defina um tamanho fixo */
+    margin-left: 91%;
+}
 .navbar .Carrinho2 {
-    margin-left: 2%;
+    width: 35px; /* Defina um tamanho fixo */
+    height: 35px; /* Defina um tamanho fixo */
+    margin-left: 1%;
 }
+
+
 
 .product-page {
     margin-top: 2%; /* Ajustado para acomodar a navbar */
@@ -187,6 +193,18 @@ body {
 
 
 
+@media (max-width: 848px) {
+    .navbar .Carrinho {
+        width: 35px; /* Defina um tamanho fixo */
+        height: 35px; /* Defina um tamanho fixo */
+        margin-left: 86%;
+    }
+    .navbar .Carrinho2 {
+        width: 35px; /* Defina um tamanho fixo */
+        height: 35px; /* Defina um tamanho fixo */
+        margin-left: 1%;
+    }
+}
 
 @media (max-width: 768px) {
     .product-page {
@@ -208,15 +226,42 @@ body {
         flex-wrap: nowrap; /* Para carrossel */
         overflow-x: scroll; /* Permite rolagem horizontal */
     }
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 91%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 1%;
+    }
 }
 
-.navbar .Carrinho {
-    width: 25px; /* Defina um tamanho fixo */
-    height: 25px; /* Defina um tamanho fixo */
-    margin-left: auto;
+@media (max-width: 631px) {
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 87%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 1%;
+    }
+
+
 }
-.navbar .Carrinho2 {
-    width: 25px; /* Defina um tamanho fixo */
-    height: 25px; /* Defina um tamanho fixo */
-    margin-left: 1%;
+
+@media (max-width: 375px) {
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 83%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 1%;
+    }
 }

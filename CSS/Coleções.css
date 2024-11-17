@@ -8,44 +8,58 @@
 
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 10%; /* Altura em porcentagem */
+    height: 80px;
     background-color: #dadada;
     color: rgb(0, 0, 0);
-    padding: 1% 2%; /* Padding em porcentagem */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
     z-index: 1000;
-    border-bottom: 0.1% solid black;
-    box-shadow: 1% 0.5% 0.5% rgba(105, 100, 100, 0.288);
+    border-bottom: 1px solid black;
+    box-shadow: 10px 5px 5px rgba(105, 100, 100, 0.288);
+    display: flex;
+    align-items: center;
 }
 
 .navbar .title {
-    font-size: 20px; /* Tamanho adaptável à largura da tela */
+    font-size: 30px;
     color: black;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: -14px;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move para centralizar completamente */
+    
 }
 
+
 .navbar .contact-button {
-    position: absolute; /* Mantém o botão à direita */
+    position: absolute;
     right: 20px;
     background-color: transparent;
-    font-size: 1.5vw; /* Fonte adaptável */
+    font-size: 13px;
     color: rgb(0, 0, 0);
-    padding: 10px 20px;
     border: none;
     cursor: pointer;
     transition: transform 0.8s;
-    margin-top: -14px;
-    font-size: 14px;
 }
 
 .contact-button:hover {
     transform: scale(0.95);
+}
+
+
+.navbar .Carrinho {
+    width: 35px; /* Defina um tamanho fixo */
+    height: 35px; /* Defina um tamanho fixo */
+    margin-left: 70%;
+    margin-top: 1%;
+}
+.navbar .Carrinho2 {
+    width: 35px; /* Defina um tamanho fixo */
+    height: 35px; /* Defina um tamanho fixo */
+    margin-left: -8%;
+    margin-top: 1%;
 }
 
 .back-button {
@@ -54,7 +68,7 @@
     width: auto;
     text-align: center;
     text-decoration: none;
-    margin-top: 6%;
+    margin-top: 9%;
     margin-left: 1%;
     padding: 1% 2%;
     font-size: 12px; /* Fonte adaptável */
@@ -128,7 +142,7 @@ img {
 /* Media queries para ajuste fino */
 @media (max-width: 768px) {
     .navbar .title {
-        font-size: 15px; /* Texto maior em telas pequenas */
+        font-size: 30px; /* Texto maior em telas pequenas */
     }
 
     .back-button {

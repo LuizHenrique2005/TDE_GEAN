@@ -18,11 +18,13 @@
     z-index: 1000;
     border-bottom: 1px solid black;
     box-shadow: 10px 5px 5px rgba(105, 100, 100, 0.288);
+    display: flex;
+    align-items: center;
 }
 
 .navbar .logo {
-    width: 75px;
-    height: 75px;
+    width: 20px;
+    height: 100%;
 }
 
 
@@ -30,26 +32,40 @@
     font-size: 30px;
     color: black;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: -2px;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move para centralizar completamente */
+    
 }
+
 
 .navbar .contact-button {
     position: absolute;
     right: 20px;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(0, 0, 0);
-    padding: 10px 20px;
     border: none;
     cursor: pointer;
     transition: transform 0.8s;
-    margin-top: 16px;
 }
 
 .contact-button:hover {
     transform: scale(0.95);
+}
+
+
+.navbar .Carrinho {
+    width: 35px; /* Defina um tamanho fixo */
+    height: 35px; /* Defina um tamanho fixo */
+    margin-left: 70%;
+    margin-top: 1%;
+}
+.navbar .Carrinho2 {
+    width: 35px; /* Defina um tamanho fixo */
+    height: 35px; /* Defina um tamanho fixo */
+    margin-left: -8%;
+    margin-top: 1%;
 }
 
 .titulo {
@@ -200,13 +216,33 @@ img {
 
 /* Ajustes extras para muito pequenas */
 @media (max-width: 320px) {
+    .contact-button {
+        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
     .navbar{
         height: 10%;
-    }
+    } 
 
     .navbar .title{
         font-size: 20px;
         margin-top: -8px;
+    }
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 80%;
+        margin-top: 1%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 2%;
+    }
+
+
+    .navbar .logo {
+        width: 20px;
+        height: 100%;
     }
 
     .container {
@@ -284,13 +320,36 @@ img {
 
 
 @media (max-width: 425px) and (min-width: 321px) {
+    .contact-button {
+        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
+
     .navbar{
         height: 10%;
-    }
+    } 
 
     .navbar .title{
         font-size: 20px;
         margin-top: -8px;
+    }
+
+
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 80%;
+        margin-top: 1%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 2%;
+    }
+
+
+    .navbar .logo {
+        width: 27px;
+        height: 90%;
     }
 
     .container {
@@ -362,15 +421,55 @@ img {
         text-align: center; /* Centraliza o texto de digitação */
     }
     
-    .contact-button {
-        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
-    }
+ 
     
 }
 
 
 
+@media (max-width: 513px) {
+
+    .contact-button {
+        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
+    }
+
+
+}
+
+
 @media (max-width: 1024px) and (min-width: 425px) {
+    
+    .navbar{
+        height: 10%;
+    } 
+
+    .navbar .contact-button {
+        font-size: 13px;
+        margin-right: 15%;
+    }
+
+    .navbar .title{
+        font-size: 20px;
+        margin-top: -8px;
+    }
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 80%;
+        margin-top: 1%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 2%;
+    }
+
+
+    .navbar .logo {
+        width: 50px;
+        height: 60%;
+    }
+    
     .container {
         display: flex; /* Garante que as imagens fiquem lado a lado */
         flex-direction: row;
@@ -440,8 +539,6 @@ img {
         text-align: center; /* Centraliza o texto de digitação */
     }
     
-    .contact-button {
-        display: none; /* Oculta o botão "Fale Conosco" em telas pequenas */
-    }
+    
     
 }
