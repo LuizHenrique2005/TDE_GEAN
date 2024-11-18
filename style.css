@@ -1,0 +1,86 @@
+body {
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Botões */
+.btn {
+    background-color: #062578; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #1b91bc; 
+}
+/* Formulários */
+#formCadastro, #formLogin {
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Texto escuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Cabeçalhos */
+h1, h2 {
+    color: #2c3e50; /* Título escuro */
+}
+
+/* Inputs */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Mensagem de sucesso */
+#mensagem {
+        margin-top: 10px; /* Espaço entre a mensagem e o botão */
+        font-size: 14px;
+        color: green;
+        text-align: center;
+    }
+    
+
+
+#formCadastro, #formLogin {
+    display: none;
+}
+
+#modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#formCadastro, #formLogin {
+    display: none;
+}
