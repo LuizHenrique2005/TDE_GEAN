@@ -13,9 +13,7 @@
         <a href="/PAGINA_INICIAL/Paginaprincipal.html">
         <div class="title">MAKARIOS</div>
     </a>
-        <!-- Novas imagens adicionadas -->
-
-        
+        <!-- Novas imagens adicionadas -->   
 <a id="cart-button" class="fas fa-shopping-cart">        
             <img src="/imagens/sacola.png" alt="Carrinho de itens" class="Carrinho">
         </a>
@@ -53,44 +51,83 @@
         </a>
     </div>
 
-    <a href="" class="back-button">Filtros</a>
-    <div class="container">
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 1">
-            <p class="titulobols">Bolsa X</p>
-        </div>
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 2">
-            <p class="titulobols">Bolsa Y</p>
-        </div>
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 3">
-            <p class="titulobols">Bolsa Z</p>
+    <div class="dropdown">
+        <a href="#" class="back-button">Filtros</a>
+        <div class="dropdown-content">
+            <label for="type">Tipo:</label>
+            <select id="type">
+                <option value="todas">Todas</option>
+                <option value="mochila">Mochila</option>
+                <option value="bolsa">Bolsa</option>
+                <option value="necessaire">Necessaire</option>
+            </select>
+
+            <label for="color">Cor:</label>
+            <select id="color">
+                <option value="todas">Todas</option>
+                <option value="preta">Preta</option>
+                <option value="marrom">Marrom</option>
+                <option value="branco">Branco</option>
+            </select>
+
+            <label for="price">Preço:</label>
+            <select id="price">
+                <option value="todos">Todos</option>
+                <option value="baixo">Baixo</option>
+                <option value="medio">Médio</option>
+                <option value="alto">Alto</option>
+            </select>
+
+            <!-- Botão para aplicar o filtro -->
+            <button onclick="filterBags()">Aplicar Filtros</button>
         </div>
     </div>
+
+    <!-- Contêiner para exibição das bolsas filtradas -->
+    <div id="bags-container" class="bags-display"></div>
+
+  
+    <div class="container">
+        <div class="box"> <img src="/imagens/Coleção/IMG_bolsabranca.jpg" alt="Imagem 1">
+            <p class="titulobols">Bolsa Alacris</p>
+        </div>
+        <div class="box"> <img src="/imagens/Coleção/IMG_academia.jpg" alt="Imagem 2">
+            <p class="titulobols">Mochila Academia</p>
+        </div>
+        <div class="box"> <img src="/imagens/Coleção/IMG_bolsapreta.jpg" alt="Imagem 3">
+            <p class="titulobols">Bolsa Deserto</p>
+        </div>
+    </div>
+    
     <div class="container2">
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 4">
-            <p class="titulobols">Bolsa X</p>
+        <div class="box"> <img src="/imagens/Coleção/IMG_bolsamarrom.jpg" alt="Imagem 4">
+            <p class="titulobols">Bolsa Zi</p>
         </div>
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 5">
-            <p class="titulobols">Bolsa Y</p>
+        <div class="box"> <img src="/imagens/Coleção/IMG_necessairebranca.jpg" alt="Imagem 5">
+            <p class="titulobols">Necessaire Reneja</p>
         </div>
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 6">
-            <p class="titulobols">Bolsa Z</p>
+        <div class="box"> <img src="/imagens/Coleção/IMG_bolsapreta2.jpg" alt="Imagem 6">
+            <p class="titulobols">Bolsa Nyore</p>
         </div>
     </div>
 
     <div class="container3">
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 7">
-            <p class="titulobols">Bolsa X</p>
+        <div class="box"> <img src="/imagens/Coleção/IMG_bolsabranca2.jpg" alt="Imagem 7">
+            <p class="titulobols">Bolsa Lore</p>
         </div>
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 8">
-            <p class="titulobols">Bolsa Y</p>
+        <div class="box"> <img src="/imagens/Coleção/IMG_pochetebranca.jpg" alt="Imagem 8">
+            <p class="titulobols">Pochete Nala</p>
         </div>
-        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 9">
-            <p class="titulobols">Bolsa Z</p>
+        <div class="box"> <img src="/imagens/Coleção/IMG_bolsamaquiagem.jpg" alt="Imagem 9">
+            <p class="titulobols">Porta-Maquiagem</p>
         </div>
     </div>
+    
     <br>
 
-
+    
+    <script src="Coleçao.js"></script>
+    
 
 </body>
 

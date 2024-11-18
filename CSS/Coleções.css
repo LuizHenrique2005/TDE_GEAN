@@ -55,11 +55,12 @@
 
 
 .navbar .Carrinho {
-    width: 30px; /* Reduzido o tamanho fixo */
-    height: 30px; /* Reduzido o tamanho fixo */
-    padding: 5px; /* Se quiser diminuir a área de clique sem mudar o tamanho do ícone */
+    width: 35px; /* Reduzido o tamanho fixo */
+    height: 35px; /* Reduzido o tamanho fixo */
+    padding: 0px; /* Se quiser diminuir a área de clique sem mudar o tamanho do ícone */
     margin-left: 1000px; /* Ajuste conforme necessário */
-    margin-top: 1%;
+    margin-right: 2%;
+    margin-top: 1.3%;
     border: none;
     outline: none;
     cursor: pointer; /* Garante que o botão seja clicável */
@@ -68,9 +69,12 @@
 .navbar .Carrinho2 {
     width: 35px; /* Defina um tamanho fixo */
     height: 35px; /* Defina um tamanho fixo */
-    margin-left: -5%;
+    margin-left: -1%;
     margin-top: 1%;
+    padding: 0px;
+    margin-right: 5%;
 }
+
 
 /* -------------------------------------------------------- */
 
@@ -394,7 +398,7 @@ img {
     .titulobols {
         font-size: 12px;
     }
-
+    
     #typing-text {
         font-size: 9px;
     }

@@ -50,16 +50,20 @@
 
 
 .navbar .Carrinho {
-    width: 35px; /* Defina um tamanho fixo */
-    height: 35px; /* Defina um tamanho fixo */
-    margin-left: 75%;
-    margin-top: 1%;
+    width: 35px; /* Reduzido o tamanho fixo */
+    height: 35px; /* Reduzido o tamanho fixo */
+    padding: 0px; /* Se quiser diminuir a área de clique sem mudar o tamanho do ícone */
+    margin-left: 1000px; /* Ajuste conforme necessário */
+    margin-right: 2%;
+    margin-top: 1.3%;
 }
 .navbar .Carrinho2 {
     width: 35px; /* Defina um tamanho fixo */
     height: 35px; /* Defina um tamanho fixo */
-    margin-left: -9%;
+    margin-left: -1%;
     margin-top: 1%;
+    padding: 0px;
+    margin-right: 5%;
 }
 
 .back-button {
