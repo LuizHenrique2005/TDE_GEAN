@@ -22,12 +22,6 @@
     align-items: center;
 }
 
-.navbar .logo {
-    width: 20px;
-    height: 100%;
-}
-
-
 .navbar .title {
     font-size: 30px;
     color: black;
@@ -58,14 +52,42 @@
 .navbar .Carrinho {
     width: 35px; /* Defina um tamanho fixo */
     height: 35px; /* Defina um tamanho fixo */
-    margin-left: 70%;
+    margin-left: 75%;
     margin-top: 1%;
 }
 .navbar .Carrinho2 {
     width: 35px; /* Defina um tamanho fixo */
     height: 35px; /* Defina um tamanho fixo */
-    margin-left: -8%;
+    margin-left: -9%;
     margin-top: 1%;
+}
+
+.back-button {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 9%;
+    margin-left: 1%;
+    padding: 1% 2%;
+    font-size: 12px; /* Fonte adaptável */
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    transition: background-color 0.9s ease, color 0.9s ease, transform 0.9s ease;
+}
+
+.back-button:hover {
+    background-color: #dadada;
+    color: #000000;
+    transform: translateY(-3px);
+}
+
+.navbar .logo {
+    width: 20px;
+    height: 100%;
 }
 
 .titulo {

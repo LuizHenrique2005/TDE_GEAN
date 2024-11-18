@@ -9,14 +9,26 @@
 </head>
 
 <body>
+<script src="Carrinho.js"></script>
     <div class="navbar"> 
         <a href="/PAGINA_INICIAL/Paginaprincipal.html">
             <div class="title">MAKARIOS</div> 
         </a>
-        <img src="/imagens/sacola.png" alt="Carrinho de itens" class="Carrinho">
-        <img src="/imagens/sacola.png" alt="Carrinho de itens" class="Carrinho2">
         
+        <a id="cart-button" class="fas fa-shopping-cart">        
+            <img src="/imagens/sacola.png" alt="Carrinho de itens" class="Carrinho">
+        </a>
+           <div class="side-cart" id="side-cart">
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items">
+
+                <!-- Os itens do carrinho serão inseridos aqui -->
+            </div>
+            <button id="close-cart">Fechar</button>
+           </div>
+           <img src="/imagens/sacola.png" alt="Carrinho de itens" class="Carrinho2">
     </div>
+
 
     <main class="product-page">
         <section class="product-visual">
@@ -52,7 +64,7 @@
                 A alça de ombro ajustável garante conforto e versatilidade, adaptando-se perfeitamente ao seu estilo.
                 Ideal para qualquer ocasião, esta bolsa é a combinação perfeita de moda e praticidade.
             </p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <button class="add-to-cart" data-product="Bolsa Alacris">Adicionar ao Carrinho</button>
             <a href="https://wa.me/5511999999999" target="_blank">
                 <button class="consult-availability">Consultar Disponibilidade</button>
             </a>
@@ -74,7 +86,7 @@
             document.getElementById('currentImage').src = imageSrc;
         }
     </script>
-
+   
 </body>
 
 </html>
