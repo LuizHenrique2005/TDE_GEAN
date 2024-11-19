@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Produto - Bolsa Zi</title>
+    <link rel="stylesheet" href="/CSS/produtos.css">
+</head>
+
+<body>
+<script src="/JS/Carrinho.js"></script>
+    <div class="navbar"> 
+        <a href="/PAGINA_INICIAL/Paginaprincipal.html">
+            <div class="title">MAKARIOS</div> 
+        </a>
+        
+        <a id="cart-button" class="fas fa-shopping-cart">        
+            <img src="/imagens/sacola.png" alt="Carrinho de itens" class="Carrinho">
+        </a>
+           <div class="side-cart" id="side-cart">
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items">
+
+                <!-- Os itens do carrinho serão inseridos aqui -->
+            </div>
+            <button id="close-cart">Fechar</button>
+           </div>
+           <img src="/imagens/sacola.png" alt="Carrinho de itens" class="Carrinho2">
+    </div>
+
+
+    <main class="product-page">
+        <section class="product-visual">
+            <div class="main-image">
+                <img src="/imagens/BOLSA ZI/IMG_BolsaZi1.jpg" alt="Bolsa Alacris"
+                    id="currentImage">
+            </div>
+            <div class="thumbnails">
+
+
+                <img src="/imagens/BOLSA ZI/IMG_BolsaZi2.jpg"
+                    alt="Bolsa Alacris Thumbnail" class="thumbnail"
+                    onclick="changeImage('/imagens/BOLSA ZI/IMG_BolsaZi2.jpg')">
+
+                <img src="/imagens/BOLSA ZI/IMG_BolsaZi3.jpg" alt="Bolsa Alacris Thumbnail" class="thumbnail"
+                    onclick="changeImage('/imagens/BOLSA ZI/IMG_BolsaZi3.jpg')">
+
+                <img src="/imagens/BOLSA ZI/IMG_BolsaZi4.jpg" alt="Bolsa Alacris Thumbnail" class="thumbnail"
+                    onclick="changeImage('/imagens/BOLSA ZI/IMG_BolsaZi4.jpg')">
+                    
+            </div>
+        </section>
+
+        <section class="product-details">
+            <h1>Bolsa Zi</h1>
+            <p class="price">R$ 160,99</p>
+            <p class="description">
+                Adicione um toque de elegância ao seu dia a dia com esta bolsa de ombro de tecido claro e superfície
+                texturizada.
+                Com um design funcional e estiloso, ela possui um compartimento principal espaçoso com aba e fecho de
+                botão de pressão,
+                além de um prático compartimento frontal com zíper para fácil acesso aos seus itens essenciais.
+                A alça de ombro ajustável garante conforto e versatilidade, adaptando-se perfeitamente ao seu estilo.
+                Ideal para qualquer ocasião, esta bolsa é a combinação perfeita de moda e praticidade.
+            </p>
+            <button class="add-to-cart" data-product="Bolsa Zi">Adicionar ao Carrinho</button> 
+            <a href="https://wa.me/5511999999999" target="_blank">
+                <button class="consult-availability">Consultar Disponibilidade</button>
+            </a>
+        </section>
+    </main>
+    <p class="titulo">Você também pode gostar de:</p>
+   <div class="container3">
+        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 7">
+            <p class="titulobols">Bolsa X</p>
+        </div>
+        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 8">
+            <p class="titulobols">Bolsa Y</p>
+        </div>
+        <div class="box"> <img src="/imagens/NOVIDADES-PRIMEIRA PAGINA/Pagina novidades/IMG_6866_VSCO.jpg" alt="Imagem 9">
+            <p class="titulobols">Bolsa Z</p>
+        </div>
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('currentImage').src = imageSrc;
+        }
+    </script>
+   
+</body>
+
+</html>
