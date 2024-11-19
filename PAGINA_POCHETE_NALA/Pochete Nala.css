@@ -1,0 +1,478 @@
+* {
+    background-color: #dadada;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #dadada;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    justify-content: space-between;
+    z-index: 1000; /* Você pode aumentar o z-index, se necessário */
+    border-bottom: 1px solid black;
+    box-shadow: 10px 5px 5px rgba(105, 100, 100, 0.288);
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar .title {
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move para centralizar completamente */
+    
+}
+
+
+/* --------------------------------------------- */
+
+
+.navbar .Carrinho {
+    width: 35px; /* Reduzido o tamanho fixo */
+    height: 35px; /* Reduzido o tamanho fixo */
+    padding: 0px; /* Se quiser diminuir a área de clique sem mudar o tamanho do ícone */
+    margin-left: 1000px; /* Ajuste conforme necessário */
+    margin-right: 2%;
+    margin-top: 1.3%;
+    border: none;
+    outline: none;
+    cursor: pointer; /* Garante que o botão seja clicável */
+
+}
+.navbar .Carrinho2 {
+    width: 35px; /* Defina um tamanho fixo */
+    height: 35px; /* Defina um tamanho fixo */
+    margin-left: -1%;
+    margin-top: 1%;
+    padding: 0px;
+    margin-right: 5%;
+}
+
+/* -------------------------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+
+#cart-button {
+    padding: 10px;
+    background-color: #007B55;
+    /* Verde escuro */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    /* Ajuste para o ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.side-cart {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1001; /* Ajuste para garantir que o carrinho fique acima da barra de navegação */
+}
+
+.side-cart.open {
+    right: 0;
+}
+
+.side-cart h2 {
+    padding: 20px;
+    margin: 0;
+    background-color: #f5f5dc;
+    /* Bege claro */
+    color: black;
+}
+
+#cart-items {
+    padding: 20px;
+}
+
+#close-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5dc;
+    /* Vermelho para o botão de fechar */
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.add-to-cart {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f5f5dc;
+    /* Bege claro */
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-item {
+    background-color: transparent;
+    border: none;
+    color: #f44336;
+    /* Vermelho para o ícone de lixeira */
+    cursor: pointer;
+    font-size: 14px;
+    /* Ajuste do tamanho da fonte */
+    padding: 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    /* Torna o texto maiúsculo */
+}
+
+/* Estilo do ícone de lixeira */
+.remove-item::before {
+    content: "\1F5D1";
+    /* Código Unicode do ícone de lixeira */
+    font-size: 16px;
+    /* Ajuste do tamanho do ícone */
+    margin-right: 5px;
+    /* Espaço entre o ícone e o texto */
+}
+
+.remove-item:hover {
+    color: #d32f2f;
+    /* Mudança de cor ao passar o mouse */
+}
+
+.remove-item:focus {
+    outline: none;
+}
+
+.quantity {
+    font-weight: bold;
+    color: #333;
+    margin-left: 5px;
+}
+
+/* Estilo dos itens do carrinho */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Nome do produto */
+.cart-item .product-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Quantidade */
+.cart-item .quantity {
+    font-size: 12px;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* Botão de excluir */
+.remove-item {
+    background-color: transparent;
+    border: none;
+    color: #f44336;
+    /* Vermelho para o ícone de lixeira */
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo do ícone de lixeira */
+.remove-item::before {
+    content: "\1F5D1";
+    /* Código Unicode do ícone de lixeira */
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* Efeito de hover */
+.remove-item:hover {
+    color: #d32f2f;
+}
+
+/* Efeito de foco */
+.remove-item:focus {
+    outline: none;
+}
+
+#cart-button {
+    padding: 10px;
+    background-color: transparent;
+    /* Verde escuro */
+    color: rgb(15, 15, 15);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart-button i {
+    font-size: 24px;
+    /* Tamanho do ícone */
+}
+/* -------------------------------------------------------------- */
+
+
+
+.product-page {
+    margin-top: 2%; /* Ajustado para acomodar a navbar */
+    display: flex;
+    flex-direction: column; /* Ajustado para responsividade */
+    justify-content: center;
+    align-items: center;
+    padding: 5%; /* Responsivo */
+}
+
+.product-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%; /* Ajustado */
+    width: 90%; /* Responsivo */
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-image img:hover {
+    transform: scale(1.01);
+}
+
+.thumbnails {
+    display: flex;
+    gap: 2%; /* Responsivo */
+}
+
+.thumbnail {
+    width: 15%; /* Ajustado para % */
+    height: auto; /* Proporcional */
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.product-details {
+    margin-top: 5%; /* Para aparecer abaixo das imagens em telas pequenas */
+    width: 90%; /* Responsivo */
+}
+
+.product-details h1 {
+    font-size: 15px; /* Responsivo */
+    margin-bottom: 3%; /* Responsivo */
+}
+
+.product-details .price {
+    font-size: 12px; /* Responsivo */
+    font-weight: bold;
+    margin-bottom: 5%; /* Responsivo */
+    display: none;
+}
+
+.product-details .description {
+    font-size: 12px; /* Responsivo */
+    line-height: 1.5;
+    margin-bottom: 5%; /* Responsivo */
+    text-align: justify;
+}
+
+.add-to-cart,
+.consult-availability {
+    display: block;
+    width: 100%;
+    padding: 2%; /* Responsivo */
+    font-size: 12px; /* Responsivo */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 3%; /* Responsivo */
+}
+
+.add-to-cart {
+    background-color: black;
+    color: white;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+
+.consult-availability {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.consult-availability:hover {
+    background-color: #adadad;
+}
+
+.titulo {
+    padding-left: 7%;
+    font-size: 14px; /* Responsivo */
+    padding-top: 2%;
+}
+
+.titulobols{
+    font-size: 12px;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2%;
+    flex-wrap: wrap;
+    padding-top: 3%;
+}
+
+.box {
+    text-align: center;
+    width: 30%; /* Ajusta a largura da box em porcentagem */
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box img:hover {
+    transform: scale(1.02);
+}
+
+.box img:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+/* Media Query para telas menores */
+
+
+
+@media (max-width: 848px) {
+    .navbar .Carrinho {
+        width: 35px; /* Defina um tamanho fixo */
+        height: 35px; /* Defina um tamanho fixo */
+        margin-left: 86%;
+    }
+    .navbar .Carrinho2 {
+        width: 35px; /* Defina um tamanho fixo */
+        height: 35px; /* Defina um tamanho fixo */
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        margin-top: 14%;
+    }
+
+    .product-details {
+        margin-top: 5%; /* Mover para baixo das imagens */
+    }
+    
+    .thumbnail{
+        width: 25%;
+        height: 25%;
+
+    }
+
+    .container {
+        flex-wrap: nowrap; /* Para carrossel */
+        overflow-x: scroll; /* Permite rolagem horizontal */
+    }
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 91%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 631px) {
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 87%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 1%;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    .navbar .Carrinho {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 83%;
+    }
+    .navbar .Carrinho2 {
+        width: 25px; /* Defina um tamanho fixo */
+        height: 25px; /* Defina um tamanho fixo */
+        margin-left: 1%;
+    }
+}
